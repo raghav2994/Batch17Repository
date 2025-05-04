@@ -10,6 +10,9 @@ import java.io.IOException;
 public class ExcelManager {
 
 
+    /*
+    This is a excel manager class
+     */
     private static String file_location = "src/main/resources/DataDrivenBatch16.xlsx";
 
     public static Object[][] getData() throws IOException {
