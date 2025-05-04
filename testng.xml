@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Ever Website Test" thread-count="3" parallel="methods">
+    <test name="Chrome Browser Test">
+        <parameter name="browser" value="chrome"/>
+
+        <!-- Run only Sanity group -->
+        <groups>
+            <run>
+                <include name="Sanity"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="org.example.testOfDemoEver.DemoEverE2ETest"/>
+        </classes>
+    </test>
+        <!--    <test name="Firefox Browser Test">-->
+<!--        <parameter name="browser" value="firefox"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="org.example.testOfDemoEver.SecondParallelTest"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
